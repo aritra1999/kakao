@@ -1,5 +1,5 @@
 - [x] [cobra](https://github.com/spf13/cobra) integration - https://github.com/aritra1999/kakao/pull/1
-- [ ] [bubbletea](https://github.com/charmbracelet/bubbletea/) integration
+- [x] [bubbletea](https://github.com/charmbracelet/bubbletea/) integration
 - [ ] [cliet-go](https://github.com/kubernetes/client-go) integration
 - [ ] context multiselect menu
   - [ ] fetch available contexts using `client-go`
