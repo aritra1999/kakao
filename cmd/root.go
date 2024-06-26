@@ -2,12 +2,10 @@ package cmd
 
 import (
 	"fmt"
-	"kakau/k8s"
+	"kakau/components"
 	"os"
-	"path/filepath"
 
 	"github.com/spf13/cobra"
-	"k8s.io/client-go/util/homedir"
 )
 
 var rootCmd = &cobra.Command{
@@ -20,17 +18,8 @@ var rootCmd = &cobra.Command{
 }
   
 func Kakao() {	
-	home := homedir.HomeDir();
-	filePath := filepath.Join(home, ".kube", "config")
-
-
-	config := k8s.GetConfig(filePath)
-	contexts := k8s.FetchAllContexts(config)
-
-	fmt.Println("available contexts:")
-	for _, context := range contexts {
-		fmt.Println(context)
-	}
+	selectedContexts := components.LoadSelectedContexts()
+	fmt.Println(selectedContexts)
 }
 
 func Execute() {
