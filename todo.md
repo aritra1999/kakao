@@ -1,10 +1,10 @@
 - [x] [cobra](https://github.com/spf13/cobra) integration - https://github.com/aritra1999/kakao/pull/1
 - [x] [bubbletea](https://github.com/charmbracelet/bubbletea/) integration - https://github.com/aritra1999/kakao/pull/3
 - [x] [cliet-go](https://github.com/kubernetes/client-go) integration - https://github.com/aritra1999/kakao/pull/4
-- [ ] context multiselect menu
-  - [ ] fetch available contexts using `client-go`
-  - [ ] bubble multi-select menu
-- [ ] github workflow go build pipeline 
+- [x] context multiselect menu
+  - [x] fetch available contexts using `client-go` - https://github.com/aritra1999/kakao/pull/6
+  - [x] bubble multi-select menu - https://github.com/aritra1999/kakao/pull/7
+- [ ] github workflow go build pipeline
   - [ ] build
   - [ ] test
   - [ ] lint check
