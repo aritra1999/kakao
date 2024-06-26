@@ -13,8 +13,7 @@ func GetConfig(filePath string) *api.Config {
 	return config;
 }
 
-
-func  FetchAllContexts(config *api.Config) []string {
+func FetchAllContexts(config *api.Config) []string {
 	var contexts []string
 	for name := range config.Contexts {
 		contexts = append(contexts, name)
